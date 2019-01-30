@@ -8,4 +8,4 @@ class ComponentConsumingContext extends React.Component {
 }
 
 
-export default withContext(ComponentConsumingContext1)
+export default withContext(ComponentConsumingContext)
