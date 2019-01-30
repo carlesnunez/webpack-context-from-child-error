@@ -1,5 +1,5 @@
 import React from 'react';
-import {myHOC} from './contextFile.js'
+import {myHOC} from './HOCFile.js'
 
 class ComponentConsumingHOC extends React.Component {
     render() {
