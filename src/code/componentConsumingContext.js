@@ -1,11 +1,11 @@
 import React from 'react';
-import {withContext} from './contextFile.js'
+import {myHOC} from './contextFile.js'
 
-class ComponentConsumingContext1 extends React.Component {
+class ComponentConsumingHOC extends React.Component {
     render() {
         return <div>HEHE</div>
     }
 }
 
 
-export default withContext(ComponentConsumingContext1)
+export default myHOC(ComponentConsumingHOC)
