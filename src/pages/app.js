@@ -17,5 +17,5 @@ export const withContext = (Component) => {
 };
 
 export default () => <React.Fragment>
-<ComponentConsumingContext1 />
+<ComponentConsumingContext />
 </React.Fragment>

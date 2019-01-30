@@ -1,8 +1,6 @@
 import React from 'react';
-import {withContext} from './app.js';
-
-// import {withContext} from './DummyOneContextCreatorComponent.js';
-// import {withContext} from './contextFile.js'
+//import {withContext} from './app.js';
+import {withContext} from './contextFile.js'
 
 class ComponentConsumingContext1 extends React.Component {
     render() {
