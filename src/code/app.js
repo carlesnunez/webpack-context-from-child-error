@@ -1,21 +1,14 @@
 import React from 'react'
-import ComponentConsumingContext from './componentConsumingContext.js'
+import ComponentConsumingHOC from './componentConsumingHOC.js'
 
-const ContextLocal = React.createContext();
-
-
-export const Context = ContextLocal;
-
-export const withContext = (Component) => {
+export const myHOC = (Component) => {
     return (props) => {
-        return (
-            <ContextLocal.Consumer>
-                {context => <Component {...props} context={context} />}
-            </ContextLocal.Consumer>
-        );
+        return (<Component {...props} />);
     };
 };
 
-export default () => <React.Fragment>
-<ComponentConsumingContext />
-</React.Fragment>
+export default () => (
+    <React.Fragment>
+        <ComponentConsumingContext />
+    </React.Fragment>
+)
