@@ -9,6 +9,6 @@ export const myHOC = (Component) => {
 
 export default () => (
     <React.Fragment>
-        <ComponentConsumingContext />
+        <ComponentConsumingHOC />
     </React.Fragment>
 )
